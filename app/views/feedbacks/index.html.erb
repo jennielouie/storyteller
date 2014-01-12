@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Storyteller</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container demo-2">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<!-- <a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/CreativeButtons/"><span>Previous Demo</span></a> -->
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="/writers"><span>View all writers</span></a></span>
+			</div>
+			<header>
+				<h1>Storyteller</h1>
+        <h3>Mini Creative Writing App</h3>
+        <h4>Tell and share stories about the photographs below</h4>
+
+			</header>
+			<ul class="grid cs-style-2">
+
+<ul class="grid cs-style-2">
+  <% @images.each do |image| %>
+    <li>
+      <figure>
+       <img src="<%= image.url %>" alt="image <%= image.id %>"/>
+       <figcaption>
+
+          <a href="/narratives/new?imgUrl=<%= image.url%>" name="narrative" class="postButton" id="<%= image.id %>">Post Caption</a>
+          <a href="images/<%= image.id %>" name="img_button" class="imageButton" id="image<%= image.id %>"> View Examples</a>
+
+
+            <div class="hidden">
+              <div class ="narrative-form" id="foo<%= image.id %>">
+              </div>
+            </div>
+
+       </figcaption>
+      </figure>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
