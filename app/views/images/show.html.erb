@@ -1,15 +1,14 @@
-
 <h1 align='center'> Summary of Narratives for Selected Image</h1>
 
 
-  <div id="examples">
     <% @foo.each do |f| %>
+    <div id="examples">
+        <strong><%= f[:title] %></strong></br>
+        <%= f[:story] %></br></br>
+        by: <em><%= f[:name] %></em></br>
 
-        title: <strong><%= f[:title] %></strong><br>
-        <%= f[:story] %><br>
-        by: <em><%= f[:name] %></em><br>
-
+     </div>
+     </br>
     <% end %>
 
-  </div>
-</div>
+

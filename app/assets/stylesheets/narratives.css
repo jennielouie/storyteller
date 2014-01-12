@@ -3,18 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-form {
+/*form {
   width:50%;
-  margin-right:auto;
-  margin-left:auto;
   font-size: 36px;
-  float: left;
   padding-left: 10%;
-  padding-top: 3%;
-}
+  padding-top: 5%;
+}*/
 
 .bo {
-  width: 40%;
-  float: right;
-  padding-top: 12%;
+  width: 50%;
+  margin-right:auto;
+  margin-left:auto;
+  float: top;
+  padding-top: 5%;
+}
+
+.newnarrative {
+  margin-right:auto;
+  margin-left:auto;
+  float: bottom;
 }

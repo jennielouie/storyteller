@@ -2,44 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.storytellerlist div {
+  display: inline-block
+}
+
 .writerList {
-  width: 30%;
-  float: left;
-  margin-left: 50px;
-  padding-left: 50px;
+  width: 90%;
+  float: top;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%
+
 }
 
-.writerIndex{
-  border-radius: 15px;
-  margin-left: 50px;
-  padding-left: 50px;
-  padding-bottom: 10px;
-  padding-right: 50px;
-  background-color: #2980b9;
+.ajaxResults {
+  width: 100%;
+  float: bottom;
+  display: inline-block
 }
-
 .specWriterStories {
   width: 50%;
-  float: right;
   border-radius: 15px;
   margin-left: 50px;
   margin-right: 50px;
   padding-left: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 10px
+
 
 }
-.story {
-/*  width: 40%;
-  float: right;*/
-
-}
+ #listStories {
+  width: 100%;
+display: inline-block
+ }
 
 #listTitle {
-margin-bottom: 30px
+/*margin-bottom: 30px*/
+width:100%
 }
 
 h3 {
-  font-size: 34px;
+  font-size: 1.5em;
 }
 
 p {
@@ -48,11 +50,17 @@ p {
 
 
 .specWriterButton {
+  width: 16%;
   padding: 5px;
   font: bold ;
   border: 2px solid #333;
   border-radius: 5px;
   background: #7f8c8d;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 18px
+
+}
+.momo {
+  float: none;
+  width: 30%
 }
