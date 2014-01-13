@@ -7,10 +7,11 @@
 }
 
 .writerList {
+  width: 90%;
   float: top;
-  margin: 0 auto;
-  padding: 2%;
-  text-align: center
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2%
 
 }
 
@@ -44,7 +45,7 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 30px;
 }
 
 
