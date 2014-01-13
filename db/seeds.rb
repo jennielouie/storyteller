@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Writer.create([
-  { name: 'paco', provider: 'facebook', uid: '2345' },
-  { name: 'jennie', provider: 'facebook', uid: '1648' },
-  { name: 'anil', provider: 'facebook', uid: '3478' },
-  { name: 'feather', provider: 'facebook', uid: '1682' }
+  { name: 'Paco', provider: 'facebook', uid: '2345' },
+  { name: 'Jennie', provider: 'facebook', uid: '1648' },
+  { name: 'Anil', provider: 'facebook', uid: '3478' },
+  { name: 'Feather', provider: 'facebook', uid: '1682' }
 ])
 
 Vote.create([
@@ -21,14 +21,14 @@ Vote.create([
 ])
 
 Narrative.create([
-  { title: 'Good Morning', story: 'this is some random text', writer_id: 1 },
-  { title: 'Good Afternoon', story: 'this is some random text again', writer_id: 2 },
-  { title: 'Good Evening', story: 'this is some random text again twice', writer_id: 2 },
-  { title: 'Good Night', story: 'this is some random text for sleep', writer_id: 4 },
-  { title: 'Apples are great', story: 'I ate an apple once.  It was good', writer_id: 1 },
-  { title: 'Poutine', story: 'Never had poutine?  You are missing out', writer_id: 2 },
-  { title: 'Hockey', story: 'He shoots he scores', writer_id: 2 },
-  { title: 'Cat', story: 'I have a cat', writer_id: 4 }
+  { title: 'Etsy', story: 'Fixie keytar vegan, Odd Future deep v Tumblr mumblecore swag chillwave Wes Anderson bicycle rights freegan tattooed Godard.   ', writer_id: 1 },
+  { title: 'Locavore', story: 'Lo-fi mixtape cardigan tousled cred.', writer_id: 2 },
+  { title: 'You havent heard of them', story: 'Deep v quinoa biodiesel pug, trust fund kitsch street art ennui sartorial vegan Helvetica PBR&B asymmetrical.', writer_id: 2 },
+  { title: 'Bahn Mi', story: 'Ugh lomo keffiyeh Thundercats, fashion axe Austin kitsch banh mi yr readymade.', writer_id: 4 },
+  { title: 'Humblebrag', story: 'Meh actually twee fashion axe, dreamcatcher kitsch slow-carb Godard 8-bit asymmetrical photo booth. ', writer_id: 1 },
+  { title: 'Poutine', story: 'Neutra master cleanse VHS retro twee Williamsburg you probably havent heard of them pour-over keytar leggings.', writer_id: 3 },
+  { title: 'Hockey', story: 'Viral occupy fashion axe umami, semiotics sartorial cliche keytar ugh hoodie sriracha vegan.', writer_id: 2 },
+  { title: 'Umami', story: 'Neutra meggings selfies banh mi, bicycle rights fanny pack swag distillery hoodie tofu vinyl kogi Carles.', writer_id: 4 }
 ])
 
 Feedback.create([
