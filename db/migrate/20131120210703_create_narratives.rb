@@ -4,6 +4,7 @@ class CreateNarratives < ActiveRecord::Migration
       t.text :story
       t.string :title
       t.integer :writer_id
+      t.integer :image_id
       t.timestamps
     end
   end

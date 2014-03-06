@@ -11,22 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131120215905) do
-
-  create_table "feedbacks", :force => true do |t|
-    t.text     "comment"
-    t.integer  "writer_id"
-    t.integer  "narrative_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
-  create_table "image_narratives", :force => true do |t|
-    t.integer  "narrative_id"
-    t.integer  "image_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
+ActiveRecord::Schema.define(:version => 20131120215423) do
 
   create_table "images", :force => true do |t|
     t.string   "url"
@@ -38,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20131120215905) do
     t.text     "story"
     t.string   "title"
     t.integer  "writer_id"
+    t.integer  "image_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

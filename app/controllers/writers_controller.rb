@@ -41,12 +41,12 @@ class WritersController < ApplicationController
     narr_array=[]
     @narratives.each do |n|
       story={}
-      story[:image_id]=ImageNarratives.find_by_narrative_id(n.id).image_id
+      story[:image_id]=n.image_id
       story[:title]=n.title
       story[:story]=n.story
       story[:narrative_id]=n.id
       story[:name]=@writer.name
-      story[:image_url]=Image.find(ImageNarratives.find_by_narrative_id(n.id).image_id).url
+      story[:image_url]=Image.find(n.image_id).url
       narr_array << story
     end
     render :json => narr_array

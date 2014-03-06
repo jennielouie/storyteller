@@ -22,8 +22,6 @@ class NarrativesController < ApplicationController
 
   def create
     @narrative = Narrative.create(params[:narrative])
-    @newImageNarrative=ImageNarratives.create(narrative_id: @narrative.id, image_id: @imageID )
-
     redirect_to images_path
   end
 
