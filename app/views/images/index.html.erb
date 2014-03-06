@@ -16,8 +16,8 @@
           <img src="<%= image.url %>" alt="image <%= image.id %>"/>
           <figcaption>
 
-             <a href="/narratives/new?imgID=<%= image.id%>" name="narrative" class="postButton" id="<%= image.id %>">Post Caption</a>
-             <a href="images/<%= image.id %>" name="img_button" class="imageButton" id="image<%= image.id %>"> View Examples</a>
+             <a href="/narratives/new?imgID= <%= image.id %>" name="narrative" class="postButton" id="<%= image.id %>">Post Caption</a>
+             <a href="images/<%= image.id %>" name="img_button" class="imageButton" id="image <%= image.id %>"> View Examples</a>
           </figcaption>
          </figure>
        </li>

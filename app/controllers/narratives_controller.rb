@@ -15,18 +15,20 @@ class NarrativesController < ApplicationController
   def new
     @narrative = Narrative.new
     @imageURL=Image.find(params[:imgID]).url
+    @imageID = params[:imgID]
+
 
   end
 
   def create
     @narrative = Narrative.create(params[:narrative])
-    redirect_to feedbacks_path
+    @newImageNarrative=ImageNarratives.create(narrative_id: @narrative.id, image_id: @imageID )
+
+    redirect_to images_path
   end
 
   def show
     @narrative = Narrative.find(params[:id])
-    @narrativeFeedbacks = Feedback.find_all_by_narrative_id(params[:id])
-    render :json => @narrativeFeedbacks
   end
 
 

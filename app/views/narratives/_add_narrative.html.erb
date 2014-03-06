@@ -5,7 +5,8 @@
 
   <%= n.label :story %></br>
   <%= n.text_area :story, :placeholder => "Your story goes here" %>
-  <%= n.hidden_field :writer_id, :value => 5 %>
+  <%= n.hidden_field :writer_id, :value => session[:writer_id] %>
+  <%= n.hidden_field :image_id, :value=> @imageID %>
 
   <%= n.submit "Submit your Caption" %>
 

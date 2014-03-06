@@ -1,9 +1,9 @@
 class Writer < ActiveRecord::Base
   attr_accessible :name, :provider, :uid
   has_many :narratives, dependent: :destroy
-  has_many :feedbacks, through: :narratives
-  has_many :votes, through: :narratives
   has_many :images, through: :narratives
+
+  has_many :votes, through: :narratives
 
   validates :name, :provider, :uid, presence: true
 

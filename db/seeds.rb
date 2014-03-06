@@ -31,12 +31,6 @@ Narrative.create([
   { title: 'Umami', story: 'Neutra meggings selfies banh mi, bicycle rights fanny pack swag distillery hoodie tofu vinyl kogi Carles.', writer_id: 4 }
 ])
 
-Feedback.create([
-  { comment: 'very good conclusion', writer_id: 4, narrative_id: 1 },
-  { comment: 'good use of similies and diction', writer_id: 3, narrative_id: 2 },
-  { comment: 'could improve on introduction', writer_id: 1, narrative_id: 4 },
-  { comment: 'Keep on doing greate work', writer_id: 4, narrative_id: 3 }
-])
 
 Image.create([
   { url: 'http://justcuteanimals.com/wp-content/uploads/2013/02/cute-animals-little-turtle-looking-out-window-pics.jpg' },

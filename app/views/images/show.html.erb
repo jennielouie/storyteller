@@ -1,7 +1,11 @@
 <h1 align='center'> Summary of Narratives for Selected Image</h1>
 
+<div class='narrimage'>
+   <img src='<%= @imageURL %>'>
+</div>
 
-    <% @foo.each do |f| %>
+
+    <% @narr4image.each do |f| %>
     <div id="examples">
         <strong><%= f[:title] %></strong></br>
         <%= f[:story] %></br></br>
@@ -12,3 +16,4 @@
     <% end %>
 
 
+<a href="/narratives/new?imgID= <%= @image.id %>" name="narrative" class="postButton">Post Caption</a>

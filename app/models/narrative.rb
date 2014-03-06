@@ -1,9 +1,6 @@
 class Narrative < ActiveRecord::Base
-  attr_accessible :title, :story, :writer_id
-
+  attr_accessible :title, :story, :writer_id, :image_id
   belongs_to :writer
-  has_many :votes, dependent: :destroy
-  has_many :feedbacks, dependent: :destroy
   has_many :images, through: :image_narratives
 
   validates :story, presence: true
