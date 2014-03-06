@@ -39,7 +39,7 @@ Feedback.create([
 ])
 
 Image.create([
-  { url: 'http://media-cache-ak0.pinimg.com/236x/81/9f/ca/819fcaf238f6936b6077b67721e2f87b.jpg' },
+  { url: 'http://justcuteanimals.com/wp-content/uploads/2013/02/cute-animals-little-turtle-looking-out-window-pics.jpg' },
   { url: 'http://www.carloweducatetogether.ie/michaelcet/wp-content/uploads/2012/09/caption.jpg' },
   { url: 'http://blog.geocaching.com/wp-content/uploads/2010/12/Caption-Contest-Squirrel.jpg' },
   { url: 'http://www.burnmagazine.org/wp-content/uploads/2010/06/obx-van.jpg' }

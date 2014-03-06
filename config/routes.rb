@@ -1,6 +1,6 @@
 Mango::Application.routes.draw do
 
-  root to: "feedbacks#index"
+  root to: "images#index"
 
   resources :feedbacks
   resources :narratives

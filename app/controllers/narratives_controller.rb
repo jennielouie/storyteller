@@ -14,6 +14,7 @@ class NarrativesController < ApplicationController
 
   def new
     @narrative = Narrative.new
+    @imageURL=Image.find(params[:imgID]).url
 
   end
 

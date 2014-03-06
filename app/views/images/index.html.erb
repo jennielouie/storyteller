@@ -1,0 +1,31 @@
+
+<div class="container demo-2">
+  <!-- Top Navigation -->
+  <div class="codrops-top clearfix">
+    <span class="right"><a href="/writers"><span>View all writers</span></a></span>
+  </div>
+  <header>
+    <h1>Storyteller</h1>
+      <h3>Tell and share stories inspired by intriguing images</h3>
+  </header>
+
+   <ul class="grid cs-style-2">
+     <% @images.each do |image| %>
+       <li>
+         <figure>
+          <img src="<%= image.url %>" alt="image <%= image.id %>"/>
+          <figcaption>
+
+             <a href="/narratives/new?imgID=<%= image.id%>" name="narrative" class="postButton" id="<%= image.id %>">Post Caption</a>
+             <a href="images/<%= image.id %>" name="img_button" class="imageButton" id="image<%= image.id %>"> View Examples</a>
+          </figcaption>
+         </figure>
+       </li>
+     <% end %>
+   </ul>
+</div>
+
+
+
+
+

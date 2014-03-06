@@ -11,8 +11,8 @@ $(function(){
         } ).done(function(data) {
           console.log('got the data')
           console.log(data)
-            $('.bo').empty();
-            $('.bo').append('<img src=' + data[i].image_url + '>')
+            $('.narrimage').empty();
+            $('.narrimage').append('<img src=' + data[i].image_url + '>')
 
             })
     });
