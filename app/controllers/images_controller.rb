@@ -37,16 +37,16 @@ end
       arr[:image_id]=narr.image_id
       arr[:title]=narr.title
       arr[:story]=narr.story
-      arr[:name]==Writer.find(narr.writer_id).name
+      arr[:name]=Writer.find(narr.writer_id).name
       arr[:writer_id]=narr.writer_id
       arr[:image_url]=Image.find(narr.image_id).url
       @narr4image << arr
     end
 
-    # respond_to do |format|
-    #   format.html
-    #   format.json { render :json => @foo }
-    # end
+    respond_to do |format|
+      format.html
+      format.json { render :json => @narr4image }
+    end
 
   end
 

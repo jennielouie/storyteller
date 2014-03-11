@@ -8,6 +8,7 @@ gem 'rails', '3.2.14'
 gem 'pg'
 gem 'omniauth-facebook', '1.4.0'
 gem 'figaro'
+gem 'foundation-rails'
 
 group :development, :test do
   gem 'rspec-rails'

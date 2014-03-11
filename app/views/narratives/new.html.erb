@@ -1,9 +1,18 @@
 <!-- Div to show image the new narrative is being written about -->
-<div class='narrimage'>
-   <img src='<%= @imageURL %>'>
+<div class='row'>
+  <div class='row'>
+    <div class='large-6 large-offset-3 columns'>
+     <h2>Write Your Story for this Image</h2>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='large-4 large-offset-4 columns'>
+     <img src='<%= @imageURL %>'>
+    </div>
+  </div>
 </div>
 
-<div class="newnarrative">
-   <%= render "add_narrative" %>
-</div>
+<%= render "add_narrative" %>
+
 

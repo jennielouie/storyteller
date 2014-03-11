@@ -48,7 +48,7 @@ p {
 }
 
 
-.specWriterButton {
+/*.specWriterButton {
   width: 16%;
   padding: 5px;
   font: bold ;
@@ -58,7 +58,7 @@ p {
   cursor: pointer;
   font-size: 18px
 
-}
+}*/
 .momo {
   float: none;
   width: 30%

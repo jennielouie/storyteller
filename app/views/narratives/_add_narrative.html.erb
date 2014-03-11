@@ -1,13 +1,17 @@
-
+<br/>
 <%= form_for @narrative do |n| %>
+ <div class="row">
   <%= n.label :title %> </br>
-  <%= n.text_field :title, :placeholder => "Title of your narrative" %></br>
-
+  <%= n.text_field :title, :class => "large-12 columns" %>
+</div>
+ <div class="row">
   <%= n.label :story %></br>
-  <%= n.text_area :story, :placeholder => "Your story goes here" %>
+  <%= n.text_area :story, :class => "large-12 columns" %>
+</div>
   <%= n.hidden_field :writer_id, :value => session[:writer_id] %>
-  <%= n.hidden_field :image_id, :value=> @imageID %>
-
-  <%= n.submit "Submit your Caption" %>
-
+  <%= n.hidden_field :image_id, :value => @imageID %>
+<div class="row">
+  <%= n.submit "Submit your Caption", :class => "button" %>
+</div>
 <% end %>
+

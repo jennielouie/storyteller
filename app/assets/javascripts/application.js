@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require_tree .
 
 var image_template = _.template( "<div class='boxes'>" +
@@ -37,3 +38,5 @@ $(function() {
 
 
 
+
+$(function(){ $(document).foundation(); });

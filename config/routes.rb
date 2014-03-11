@@ -8,6 +8,6 @@ Mango::Application.routes.draw do
   resources :images
 
   match "/auth/:provider/callback" => "sessions#create"
-  math "auth/failure", to: redirect('/')
+  match "auth/failure", to: redirect('/')
   match "/signout" => "sessions#destroy", :as => :signout
 end

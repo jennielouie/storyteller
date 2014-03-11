@@ -1,19 +1,27 @@
-<h1 align='center'> Summary of Narratives for Selected Image</h1>
-
-<div class='narrimage'>
-   <img src='<%= @imageURL %>'>
-</div>
 
 
-    <% @narr4image.each do |f| %>
-    <div id="examples">
-        <strong><%= f[:title] %></strong></br>
-        <%= f[:story] %></br></br>
-        by: <em><%= f[:name] %></em></br>
+  <div class='row'>
+    <div class='large-12 columns'>
+     <h2>Summary of Narratives for Selected Image</h2>
+     <a href="/narratives/new?imgID= <%= @image.id %>" name="narrative" class="postButton">Post Caption</a>
+    </div>
+  </div>
 
-     </div>
-     </br>
-    <% end %>
+  <div class='row'>
+    <div class='large-4 columns'>
+     <img src='<%= @imageURL %>'>
+    </div>
+
+    <div class="large-8 columns">
+      <% @narr4image.each do |f| %>
+
+      <div id="examples">
+          <strong><%= f[:title] %></strong></br>
+          <%= f[:story] %></br></br>
+          by: <em><%= f[:name] %></em></br>
+      </div>
+<br/>
+      <% end %>
+    </div>
 
 
-<a href="/narratives/new?imgID= <%= @image.id %>" name="narrative" class="postButton">Post Caption</a>

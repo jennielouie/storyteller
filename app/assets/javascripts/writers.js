@@ -7,12 +7,14 @@ $(function(){
             url: "/writers/" + targetId,
             type: "get"
         } ).done(function(data) {
-            $('.specWriterStories').empty();
+            $('#writerStories').empty();
             $('#listTitle').empty();
+            $('#listTitle').html('<h3 align="center">The Complete Works of ' + data[0].name + '</h3>');
                 for (i=0; i<data.length; i++) {
-                        $('#listStories').append('<div class="momo"><h3 id="storytitle">'+ data[i].title + ' </h3><img src=' + data[i].image_url + '><p> ' + data[i].story + '</p></div>')
+                        $('#writerStories').append('<li><div class="row"><h3>'+ data[i].title + ' </h3></div><div class="row"><img src=' + data[i].image_url + '></div><div class="row"><p> ' + data[i].story + '</p></div></li>')
+
                 }
-                $('#listTitle').html('<h3 align="center">The Complete Works of ' + data[0].name + '</h3>');
+
             } );
     });
 });
