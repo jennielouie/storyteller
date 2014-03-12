@@ -5,6 +5,9 @@ Mango::Application.config.session_store :cookie_store, key: '_mango_session'
 Rails.application.config.middleware.use OmniAuth::Builder do
 
   provider :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET']
+  provider :identity, on_failed_registration: lambda { |env|
+    IdentitiesController.action(:new).call(env)
+  }
 end
 
 # Use the database for sessions instead of the cookie-based default,

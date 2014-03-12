@@ -1,16 +1,16 @@
 <h2 align='center'>Select a Storyteller</h2>
 
+<div class='small-10 small-centered columns'>
+   <ul class="inline-list">
+      <% @writers.each do |writer| %>
+         <li class="specWriterButton" id="<%= writer.id %>"><a href="#"><%= writer.name %></a></li>
+      <% end %>
+   </ul>
 
-<ul class="inline-list">
-   <% @writers.each do |writer| %>
-      <li class="specWriterButton" id="<%= writer.id %>"><a href="#"><%= writer.name %></a></li>
-   <% end %>
-</ul>
 
-<div id='listTitle'>
+   <div id='listTitle'>
+   </div>
+
+   <ul class='large-block-grid-4' id="writerStories">
+   </ul>
 </div>
-
-<ul class='large-block-grid-4' id="writerStories">
-</ul>
-
-

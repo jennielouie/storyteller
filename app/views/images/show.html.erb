@@ -3,16 +3,17 @@
   <div class='row'>
     <div class='large-12 columns'>
      <h2>Summary of Narratives for Selected Image</h2>
-     <a href="/narratives/new?imgID= <%= @image.id %>" name="narrative" class="postButton">Post Caption</a>
     </div>
   </div>
 
   <div class='row'>
-    <div class='large-4 columns'>
+    <div class='large-4 small-12 columns'>
      <img src='<%= @imageURL %>'>
+     <br/>
+     <h4><a href="/narratives/new?imgID= <%= @image.id %>" name="narrative" class="postButton">Post Caption</a></h4>
     </div>
 
-    <div class="large-8 columns">
+    <div class="large-8 small-12 columns">
       <% @narr4image.each do |f| %>
 
       <div id="examples">

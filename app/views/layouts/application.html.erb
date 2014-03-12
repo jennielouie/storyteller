@@ -27,9 +27,9 @@
           <li><a href="/signout">Welcome <%= current_user.name %>!  Click here to sign out</a></li>
           <% else %>
 
-          <li><a href="#">Sign in</a></li>
+          <li><a href="/auth/identity">Sign in</a></li>
           <li><a href="/auth/facebook">Sign in with Facebook</a></li>
-          <li><a href="/">Create an account</a></li>
+          <li><a href="/auth/identity/register">New Visitor? Create an Account</a></li>
           <% end %>
         </ul>
 
