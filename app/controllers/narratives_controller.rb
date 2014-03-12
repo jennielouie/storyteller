@@ -1,4 +1,5 @@
 class NarrativesController < ApplicationController
+before_filter :authorize
 
   def index
     @narratives = Narrative.all
@@ -44,6 +45,15 @@ class NarrativesController < ApplicationController
   def destroy
     Narrative.delete(params[:id])
     redirect_to narratives_path
+  end
+
+  private
+
+  def authorize
+    if !current_user
+      flash[:alert] = "Sorry you must be signed in to create or revise stories."
+      redirect_to root_url
+    end
   end
 
 end

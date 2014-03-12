@@ -11,7 +11,8 @@
   <%= n.hidden_field :writer_id, :value => session[:writer_id] %>
   <%= n.hidden_field :image_id, :value => @imageID %>
 <div class="row">
-  <%= n.submit "Submit your Caption", :class => "button" %>
+  <%= n.submit "Submit your caption", :class => "button" %>
+  <a href="/"><p>Or click here to cancel and return to image gallery</p></a>
 </div>
 <% end %>
 

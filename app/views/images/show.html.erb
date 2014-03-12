@@ -2,7 +2,7 @@
 
   <div class='row'>
     <div class='large-12 columns'>
-     <h2>Summary of Narratives for Selected Image</h2>
+     <h2>Captions for this image</h2>
     </div>
   </div>
 
@@ -10,19 +10,21 @@
     <div class='large-4 small-12 columns'>
      <img src='<%= @imageURL %>'>
      <br/>
-     <h4><a href="/narratives/new?imgID= <%= @image.id %>" name="narrative" class="postButton">Post Caption</a></h4>
+     <h4><a href="/narratives/new?imgID= <%= @image.id %>" name="narrative" class="postButton">Post a caption</a></h4>
+     <p><a href="/">Or click here to return to image gallery</a></p>
     </div>
 
     <div class="large-8 small-12 columns">
-      <% @narr4image.each do |f| %>
 
-      <div id="examples">
-          <strong><%= f[:title] %></strong></br>
-          <%= f[:story] %></br></br>
-          by: <em><%= f[:name] %></em></br>
-      </div>
-<br/>
-      <% end %>
+        <% @narr4image.each do |f| %>
+          <div id="examples">
+              <strong><%= f[:title] %></strong></br>
+              <%= f[:story] %></br></br>
+              by: <em><%= f[:name] %></em></br>
+          </div>
+          <br/>
+        <% end %>
     </div>
+
 
 

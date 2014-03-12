@@ -9,10 +9,14 @@ $(function(){
         } ).done(function(data) {
             $('#writerStories').empty();
             $('#listTitle').empty();
-            $('#listTitle').html('<h3 align="center">The Complete Works of ' + data[0].name + '</h3>');
-                for (i=0; i<data.length; i++) {
-                        $('#writerStories').append('<li><div class="row"><h3>'+ data[i].title + ' </h3></div><div class="row"><img src=' + data[i].image_url + '></div><div class="row"><p> ' + data[i].story + '</p></div></li>')
-
+                if (data.length==0){
+                    $('#writerStories').append('<p>Sorry, this writer does not have any stories.</p>')
+                } else {
+                        $('#listTitle').html('<h4 align="center">The Complete Works of ' + data[0].name + '</h4>');
+                        for (i=0; i<data.length; i++) {
+                            $('#writerStories').append('<li><div class="row"><h5>'+ data[i].title + ' </h5></div><div class="row"><img src=' + data[i].image_url + '></div><div class="row"><p> ' + data[i].story + '</p></div></li>')
+                        }
+                        $('#returnToImages').append('<div><a href="images"><h5>Inspired to write a caption? Click to here select an image from the gallery.</a></h5></div>')
                 }
 
             } );

@@ -29,19 +29,21 @@
 
           <li><a href="/auth/identity">Sign in</a></li>
           <li><a href="/auth/facebook">Sign in with Facebook</a></li>
-          <li><a href="/auth/identity/register">New Visitor? Create an Account</a></li>
+          <li><a href="/auth/identity/register">New visitor? Create an account</a></li>
           <% end %>
         </ul>
 
         <!-- Left Nav Section -->
         <ul class="left">
-          <li><a href='/writers'>View All Writers</a></li>
+          <li><a href='/writers'>View all writers</a></li>
         </ul>
       </section>
 
     </nav>
 <div class-"row">
 </br></div>
+
+<%= flash[:alert] %>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
